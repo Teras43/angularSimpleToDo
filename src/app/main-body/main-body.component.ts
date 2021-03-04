@@ -13,7 +13,11 @@ export class MainBodyComponent implements OnInit {
   }
 
   checked: Boolean = false;
-
-  TaskListArray: Array<String> = ["Clean the house", "Pull trash to road", "Pick-up lunch", "Binge TV shows"]
-
+  
+  taskListArray: Array<any> = [
+      {task: "Clean the house", isComplete: false }, 
+      {task: "Pull trash to road", isComplete: false }, 
+      {task: "Pick-up lunch", isComplete: false }, 
+      {task: "Binge TV shows", isComplete: false }
+    ]
 }
