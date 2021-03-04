@@ -8,4 +8,12 @@
       >
     </section>
   </mat-card-content>
+  <mat-card-content *ngIf="checked">
+    <h2 class="example-h2">Today's Tasks:</h2>
+    <mat-list role="list">
+      <mat-list-item role="listitem" *ngFor="let task of TaskListArray"
+        >{{ task }}
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
 </mat-card>

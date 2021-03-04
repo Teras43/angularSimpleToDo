@@ -12,6 +12,8 @@ export class MainBodyComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  checked = false;
+  checked: Boolean = false;
+
+  TaskListArray: Array<String> = ["Clean the house", "Pull trash to road", "Pick-up lunch", "Binge TV shows"]
 
 }
